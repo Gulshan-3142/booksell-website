@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial,sans-serif;
+}
+body.dark-mode{
+    background-color: #121212;
+    color: #ffffff;
+}
+body.dark-mode.hero{
+    background-color: #1e1e1e;
+}
+.navbar{
+    background-color: #4a90e2;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* .navbar .logo{
+    font-size: 24px;
+   font-weight: bold;
+
+} */
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color o.3s;
+}
+.navbar ul li a:hover{
+    color: #f77948;
+}
+.navbar .right-section{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.search-box input{
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+
+}
+.login-btn{
+    background-color: #ffdd57;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media(max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar .right-section{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navbar ul{
+        gap: 10px;
+    }
+    
+}
+
+.hero{
+    background-image: url("\hero-img.png");
+    background-size:auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    text-align:center;
+
+}
+.hero h1{
+    font-size: 36px;
+    color: #fffefe;
+    margin-bottom: 30px;
+}
+.hero p{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+
+}
+.welcome-section{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 35vh;
+}
+.welcome-section a{
+    text-decoration: none;
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.welcome-section a:hover{
+    background-color: #356ac3;
+
+}
+.welcome-section img{
+    margin-top: 40px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+.how-it-works{
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+
+}
+.how-it-works h2{
+    font-size: 40px;
+    color: #f77124;
+    margin-bottom: 40px;
+}
+.steps{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+.step{
+    background-color: #f0f4ff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 2px 6px rgb(0,0,0,0.1);
+
+}
+.step span{
+    font-size: 40px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+  
+}
+.step p{
+    font-size: 16px;
+    color: #555;
+}
+.categories{
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+.categories h2{
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+.category-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.category{
+    background-color: #f0f4ff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.category:hover{
+    transform: translateY(-5px);
+}
+.category span{
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+.category h3{
+    font-size: 18px;
+    color: #4e90e2;
+    margin-bottom: 10px;
+
+}
+.category button{
+     background-color: #4a90e2;
+     color: white;
+     border: none;
+     padding: 8px 16px;
+     border-radius: 5px;
+     cursor: pointer;
+
+}
+.category button:hover{
+    background-color: #356ac3;
+}
+.footer{
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 20px;
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-logo h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+.footer-link ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-links li,
+.foooter-links a{
+    color: #ccc;
+    text-decoration: none;
+}
+.footer-links a:hover{
+    color: #fff;
+}
+.footer-bottom{
+   text-align: center;
+   margin-top: 30px;
+   font-size: 14px;
+   color: #aaa;
+}
