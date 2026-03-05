@@ -1,153 +1,207 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BookSeller </title>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Doctor Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-
 </head>
-
 <body>
-    <!-- Create Navbar  -->
-     <p> Hi I am Gulshan</p>
-    <nav class="navbar">
-         <div id="logo"> <img src="\My_Portfolio\BookSeller\logo.png" alt="Gulshan" height="50" width="100"> </div>
-        <ul>
-            <li> <a href="My_Portfolio\BookSeller\flowerbuy.html"> Home</a></li>
-            <li> <a href="#"> Shop</a></li>
-            <li> <a href="#"> Seller</a></li>
-            <li> <a href="#"> Chat Support</a></li>
-            <li> <a href="#"> Contact Us</a></li>
-            <li> <a href="#"> Feedback </a></li>
-            <li> <button onclick="toggleDarkMode()"> 🌚</button></li>
-        </ul>
 
-        <div class="right-section">
-            <div class="search-box">
-                <input type="text" placeholder="Search books...">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-notes-medical"></i>
+                <span>CityCare<span class="highlight">Clinic</span></span>
             </div>
-            <button class="login-btn"> Login </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#book" class="btn-primary">Book Appointment</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </nav>
 
-    <!-- Welcome Section -->
-    <section class="hero">
-        <h1> <span style="color:rgb(250, 122, 37)">Buy  </span>and <span style="color:rgb(250, 122, 37)">Sell  </span>old or new Books at Best Prices</h1>
-        <p>
-            Find your next favorite book or sell your old ones with ease.
-        </p>
-        <div class="welcome-section">
-            <a href="#"> Browse Books</a>
-            <a href="#"> Sell a Books </a>
+    <section class="hero container">
+        <div class="hero-content">
+            <h1>Your Health, <br><span class="highlight">Our Priority</span></h1>
+            <p>Providing compassionate, expert medical care for your entire family. Experience modern healthcare tailored to your needs with ease and comfort.</p>
+            <div class="hero-buttons">
+                <a href="#book" class="btn-primary lg">Book Appointment</a>
+                <a href="#contact" class="btn-outline lg">Contact Us</a>
+            </div>
         </div>
-        <img src="#" alt="Books">
-    </section>
-
-    <!-- How it's working section -->
-    <section class="how-it-works">
-        <h2> How It Works </h2>
-        <div class="steps">
-            <div class="step">
-                <span>Find your books</span>
-                <h3>Search Books</h3>
-                <p> Find books by name, class </p>
-            </div>
-
-            <div class="step">
-                <span>Click buy button </span>
-                <h3> Go to the Chat Section </h3>
-                <p> Talk with seller to fixed Prices and confomad your location </p>
-            </div>
-
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?auto=format&fit=crop&w=800&q=80" alt="Professional Doctor">
         </div>
     </section>
 
-    <!-- Book category section -->
-    <section class="categories">
-        <h1>Explore by Categories</h1>
-        <div class="category-list">
-            <div class="category">
-                <h3> Jee main</h3>
-                <button> Explore </button>
+    <section id="about" class="about bg-light">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" alt="Dr. Sarah Johnson">
             </div>
-            <div class="category">
-                <h3> Neet </h3>
-                <button> Explore </button>
-            </div>
-            <div class="category">
-                <h3> SSC</h3>
-                <button> Explore </button>
-            </div>
-            <div class="category">
-                <h3> Class 12th Science</h3>
-                <button> Explore </button>
-            </div>
-            <div class="category">
-                <h3> Class 12th Commars</h3>
-                <button> Explore </button>
-            </div>
-            <div class="category">
-                <h3> Class 12th Arts</h3>
-                <button> Explore </button>
-            </div>
-            <div class="category">
-                <h3> Class 11th Science</h3>
-                <button> Explore </button>
-            </div>
-            <div class="category">
-                <h3> Class 11th Commars</h3>
-                <button> Explore </button>
-            </div>
-            <div class="category">
-                <h3> Class 11th Arts</h3>
-                <button> Explore </button>
-            </div>
-            <div class="category">
-                <h3> Class 10th</h3>
-                <button> Explore </button>
-            </div>
-            <div class="category">
-                <h3> Class 9th</h3>
-                <button> Explore </button>
+            <div class="about-content">
+                <h4 class="subtitle">About The Doctor</h4>
+                <h2>Dr. Sarah Johnson</h2>
+                <div class="badge">
+                    <i class="fa-solid fa-user-md"></i> MD, FACP | 15+ Years Experience
+                </div>
+                <p>Dr. Johnson is a board-certified physician dedicated to providing patient-centered care. With over 15 years of clinical experience, she specializes in internal medicine and preventive care. Her approach combines the latest medical technologies with genuine compassion, ensuring that every patient feels heard, understood, and exceptionally well cared for.</p>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- logo -->
-            <div class="footer-logo">
-                <h3> Logo </h3>
-                <p> Your trusted platfrom to buy & sell books.</p>
+    <section id="services" class="services container">
+        <div class="section-header">
+            <h2>Our Medical Services</h2>
+            <p>Comprehensive healthcare solutions designed for your specific needs.</p>
+        </div>
+        <div class="grid-4">
+            <div class="card">
+                <div class="icon-box blue"><i class="fa-solid fa-stethoscope"></i></div>
+                <h3>General Checkup</h3>
+                <p>Routine physical exams and health screenings to keep you at your best.</p>
+            </div>
+            <div class="card">
+                <div class="icon-box blue"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3>Cardiology</h3>
+                <p>Advanced heart care, ECGs, and cardiovascular disease management.</p>
+            </div>
+            <div class="card">
+                <div class="icon-box blue"><i class="fa-solid fa-droplet"></i></div>
+                <h3>Diabetes Care</h3>
+                <p>Comprehensive blood sugar monitoring, diet plans, and medication management.</p>
+            </div>
+            <div class="card">
+                <div class="icon-box red"><i class="fa-solid fa-truck-medical"></i></div>
+                <h3>Emergency Care</h3>
+                <p>Urgent medical attention and first aid for unexpected health situations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header text-white">
+                <h2>Why Choose Us</h2>
+                <p>We blend expertise with empathy to deliver the highest standard of care.</p>
+            </div>
+            <div class="grid-3">
+                <div class="feature">
+                    <div class="feature-icon"><i class="fa-solid fa-user-nurse"></i></div>
+                    <h3>Experienced Staff</h3>
+                    <p>Our medical team brings decades of combined experience across various specialties.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <h3>Modern Equipment</h3>
+                    <p>We utilize state-of-the-art medical technology for precise diagnostics and treatment.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock availability for our registered patients in times of critical need.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="booking-section bg-light">
+        <div class="container grid-2">
+            <div class="booking-form card">
+                <h2>Book an Appointment</h2>
+                <p>Fill out the form below and our front desk will confirm your slot.</p>
+                <form id="appointmentForm">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" id="phone" placeholder="(555) 123-4567" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message / Symptoms</label>
+                        <textarea id="message" rows="4" placeholder="Briefly describe why you are visiting..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Confirm Request</button>
+                </form>
             </div>
 
-            <!-- Contact Info -->
-            <div class="footer-link">
-                <h4> Quick Links</h4>
+            <div class="testimonials">
+                <h2>What Our Patients Say</h2>
+                <p>Real feedback from our valued community members.</p>
+                <div class="review card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"The clinic is spotlessly clean, and the staff is incredibly kind. Dr. Johnson listened to all my concerns without rushing me."</p>
+                    <h5>- Martha W., 68</h5>
+                </div>
+                <div class="review card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Booking an appointment was seamless. Modern equipment and a very professional atmosphere."</p>
+                    <h5>- Robert T., 42</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container grid-4 footer-grid">
+            <div class="footer-info">
+                <div class="logo footer-logo">
+                    <i class="fa-solid fa-notes-medical"></i>
+                    <span>CityCare<span class="highlight">Clinic</span></span>
+                </div>
+                <p>Your health, our priority. Providing trusted medical services to our community for over a decade.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
                 <ul>
-                    <li> <a href="#"> Home</a></li>
-                    <li> <a href="#"> Shop</a></li>
-                    <li> <a href="#"> Seller</a></li>
-                    <li> <a href="#"> Chat Support</a></li>
-                    <li> <a href="#"> Contact Us</a></li>
-                    <li> <a href="#"> Feedback </a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Doctor</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#book">Book Appointment</a></li>
                 </ul>
             </div>
-           
-            <!-- copyright -->
-             <div class="footer-bottom">
-               <p>&copy; 2025 BookSell. All rights reserved. </p>
-             </div>
-             
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Medical Pkwy, Healthville</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> care@citycareclinic.com</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CityCare Clinic. All rights reserved.</p>
         </div>
     </footer>
-<script src="bookSeller.js"></script>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
 
